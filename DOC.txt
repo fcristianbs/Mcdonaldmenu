@@ -1,0 +1,29 @@
+como os objetos/variaveis/arquivos e funções funcionam:
+
+log.json > registradores do projeto(salva alguma info desejada e o id do ultimo produto adicionado)
+
+//////////////////leitura de DADOS\\\\\\\\\\\\\\\\\\
+
+carregar_informações(localização do arquivo)
+
+exemplo:
+
+contVar = carregar_informações('C:\\Users\\crist\\Code\\log') 
+
+retorna {"nome": "ok", "id": 2}
+
+
+informitens = carregar_informações(f'C:\\Users\\crist\\Code\\{nomedoitem} id[{itemid}]')
+
+retorna {"nome": "Bigmac", "preco": "9,50", "descricao": "S", "id": 1}
+
+//////////////////CRIAÇÃO DE DADOS\\\\\\\\\\\\\\\\\\\
+
+salvar_informacoes(nome, preco, descricao, nomedoarquivo)
+
+essa função leva as informações do produto e salva em um dicionario .json
+
+exemplo:
+
+salvar_informacoes('bigmac', '9,80', 'descricao', nomedoarquivo)
+
